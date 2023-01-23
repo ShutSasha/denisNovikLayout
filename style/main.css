@@ -46,8 +46,67 @@ html, body {
 	color: #070707;
 }
 
+hr{
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.denisNovik-short-info{
+	margin-bottom: 30px;
+}
+
 .denisNovik-list{
+	padding: 0;
+	margin: 0;
 	display: flex;
 	justify-content: space-between;
 	list-style-type: none;
+}
+
+.denisNovik-item{
+	font-family: 'Gilroy', sans-serif;
+	font-weight: medium;
+	font-size: 18px;
+	line-height: 22px;
+	color: #070707;
+	max-width: 160px;
+	display: flex;
+	align-self: flex-end;
+}
+
+.denisNovik-item:first-child{
+	font-family: 'Gilroy', sans-serif;
+	font-weight: bold;
+	font-size: 47px;
+	line-height: 59px;
+	color: #070707;
+	max-width: 123px;
+}
+
+.denisNovik-item:last-child{
+	font-family: 'Gilroy',sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	color: #828282;
+	transform: rotate(-90deg);
+	max-width: 20px;
+	justify-content: flex-start;
+}
+
+.denisNovik-item:last-child button, .denisNovik-item:last-child p{
+	font-family: 'Gilroy',sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	color: #828282;
+	border: none;
+	background-color: #FFFFFF;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+}
+
+.photo-main-content{
+	width: 100%;
 }
