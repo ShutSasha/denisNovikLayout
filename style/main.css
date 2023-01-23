@@ -45,3 +45,9 @@ html, body {
 .nav-menu-item:first-child a{
 	color: #070707;
 }
+
+.denisNovik-list{
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+}
