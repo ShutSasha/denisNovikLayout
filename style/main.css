@@ -51,6 +51,10 @@ hr{
 	margin-bottom: 40px;
 }
 
+.denisNovik-content{
+	margin-bottom: 100px;
+}
+
 .denisNovik-short-info{
 	margin-bottom: 30px;
 }
@@ -109,4 +113,8 @@ hr{
 
 .photo-main-content{
 	width: 100%;
+}
+
+.about-me{
+	background: #F6F6F6;
 }
