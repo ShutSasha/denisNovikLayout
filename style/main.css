@@ -104,13 +104,25 @@ hr{
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 20px;
-	color: #828282;
 	border: none;
 	background-color: #FFFFFF;
 	cursor: pointer;
 	margin: 0;
 	padding: 0;
+	z-index: 1;
 }
+
+.button-lang-ENG{
+	color: #070707;
+}
+
+.button-lang-UA{
+	color: #828282;
+}
+
+.denisNovik-item:last-child p{
+	color: #070707;
+} 
 
 .photo-main-content{
 	width: 100%;
