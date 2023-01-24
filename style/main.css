@@ -1,4 +1,4 @@
-html, body {
+html, body,h2 {
 	margin: 0;
 	padding: 0;
 }
@@ -35,6 +35,7 @@ html, body {
 	font-size: 18px;
 	line-height: 22px;
 	color: #828282;
+	transition: color 0.3s linear;
 }
 
 .nav-menu-item-link:hover{
@@ -131,7 +132,6 @@ hr{
 }
 
 .about-me-title{
-	margin: 0;
 	margin-bottom: 20px;
 	font-family: 'Gilroy',sans-serif;
 	font-size: 34px;
@@ -166,7 +166,6 @@ hr{
 }
 
 .skills-title{
-	margin: 0;
 	font-family: 'Gilroy', sans-serif;
 	font-weight: bold;
 	font-size: 34px;
@@ -210,4 +209,53 @@ hr{
 	line-height: 17px;
 	text-align: center;
 	color: #828282;
+}
+
+.skills{
+	margin-bottom: 110px;
+}
+
+.portfolio-inner{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.portfolio-title{
+	font-family: 'Gilroy',sans-serif;
+	font-weight: bold;
+	font-size: 34px;
+	line-height: 42px;
+	text-align: center;
+	color: #070707;
+	margin-bottom: 50px;
+}
+
+.portfolio-list{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.portfolio-item{
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.portfolio-image{
+	width: 100%;
+	margin-bottom: 45px;
+}
+
+.portfolio-image-link{
+	font-family: 'Gilroy', sans-serif;
+	font-weight: medium;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	text-decoration-line: underline;
+	color: #070707;
 }
