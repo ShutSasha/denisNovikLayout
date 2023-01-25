@@ -111,14 +111,28 @@ hr{
 	padding: 0;
 	z-index: 1;
 }
-
+ /* ! */
 .button-lang-ENG{
 	color: #070707;
+	transition: color .5s ease;
 }
 
 .button-lang-UA{
 	color: #828282;
+	transition: color .4s ease;
 }
+
+.active-btn-ua{
+	color: #070707;
+	transition: color .5s ease;
+}
+
+.no-active-btn-eng{
+	color: #828282;
+	transition: color .4s ease;
+}
+/* ! */
+
 
 .denisNovik-item:last-child p{
 	color: #070707;
