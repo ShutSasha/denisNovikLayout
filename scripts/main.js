@@ -43,7 +43,7 @@ function changeLanguage () {
 	}
 
 	for (let key in langArr) {
-		let elem = document.querySelector('.lng-' + key);
+		let elem = document.querySelector(key);
 		if (elem) {
 			elem.innerHTML = langArr[key][hash];
 		}

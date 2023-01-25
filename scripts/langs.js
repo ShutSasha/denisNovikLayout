@@ -3,10 +3,25 @@ const langArr = {
 		"en": "Denis Novik",
 		"ua": "Денис Новік",
 	},
-	"chip": {
-		"ru": "графический чип",
-		"en": "graphics processing unit",
-		"ua": "графічний чіп",
+	".home": {
+		"en": "Home",
+		"ua": "Головна",
+	},
+	".about-me-lng": {
+		"en": "About me",
+		"ua": "Про мене",
+	},
+	".skills-lng": {
+		"en": "Skills",
+		"ua": "Навички",
+	},
+	".portfolio-lng": {
+		"en": "Portfolio",
+		"ua": "Портфоліо",
+	},
+	".contacts-lng": {
+		"en": "Contacts",
+		"ua": "Контакти",
 	},
 
 }
