@@ -349,6 +349,15 @@ hr{
 	padding: 10px 30px;
 	cursor: pointer;
 	margin-bottom: 85px;
+	border: 1px solid #070707;
+	transition: background 1s ease, color 2s ease, border 3s ease;
+}
+
+.contacts-btn:hover{
+	transition: background 1s ease, color 2s ease;
+	background-color: white;
+	border: 1px solid #FFFFFF;
+	color:#070707;
 }
 
 .social-media-list{
@@ -360,6 +369,7 @@ hr{
 	justify-content: space-around;
 	margin-bottom: 50px;
 }
+
 
 .footer-text{
 	margin: 0;
