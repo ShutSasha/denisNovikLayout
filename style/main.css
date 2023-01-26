@@ -118,7 +118,7 @@ hr{
 
 .denisNovik-item{
 	font-family: 'Gilroy', sans-serif;
-	font-weight: medium;
+	font-weight: 400;
 	font-size: 18px;
 	line-height: 22px;
 	color: #070707;
@@ -159,7 +159,7 @@ hr{
 	padding: 0;
 	z-index: 1;
 }
- /* ! */
+
 .button-lang-ENG{
 	color: #070707;
 	transition: color .5s ease;
@@ -179,8 +179,6 @@ hr{
 	color: #828282;
 	transition: color .4s ease;
 }
-/* ! */
-
 
 .denisNovik-item:last-child p{
 	color: #070707;
@@ -225,7 +223,7 @@ hr{
 	text-align: center;
 	margin-bottom: 30px;
 	font-family: 'Gilroy', sans-serif;
-	font-weight: medium;
+	font-weight: 400;
 	font-size: 18px;
 	line-height: 22px;
 	text-align: center;
@@ -252,7 +250,7 @@ hr{
 .skills-text{
 	margin: 0;
 	font-family: 'Gilroy',sans-serif;
-	font-weight: medium;
+	font-weight: 400;
 	font-size: 18px;
 	line-height: 22px;
 	text-align: center;
@@ -346,7 +344,7 @@ hr{
 
 .portfolio-image-link{
 	font-family: 'Gilroy', sans-serif;
-	font-weight: medium;
+	font-weight: 400;
 	font-size: 18px;
 	line-height: 22px;
 	text-align: center;
@@ -380,7 +378,7 @@ hr{
 .contacts-text{
 	margin: 0 0 30px 0;
 	font-family: 'Gilroy', sans-serif;
-	font-weight: medium;
+	font-weight: 400;
 	font-size: 18px;
 	line-height: 22px;
 	text-align: center;
@@ -420,14 +418,13 @@ hr{
 	margin-bottom: 50px;
 }
 
-
 .footer-text{
 	margin: 0;
 	padding: 0;
 	text-align: center;
 	margin-bottom: 120px;
 	font-family: 'Gilroy',sans-serif;
-	font-weight: medium;
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 17px;
 	text-align: center;
