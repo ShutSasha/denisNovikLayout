@@ -15,6 +15,24 @@ html, body,h2 {
 	font-weight: 700;
 }
 
+.scrollTop{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.showScroll{
+	opacity: 1;
+}
+
+.hideScroll{
+	opacity: 0;
+}
+
+
+
 .container{
 	margin: 0 250px;
 }

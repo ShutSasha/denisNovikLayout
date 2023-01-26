@@ -51,3 +51,14 @@ function changeLanguage () {
 
 }
 changeLanguage();
+
+window.onscroll = () => {
+	if (window.scrollY > 1000) {
+		document.querySelector('.scrollTop').classList.remove('hideScroll');
+		document.querySelector('.scrollTop').classList.add('showScroll');
+	}
+	else if (window.scrollY < 1000) {
+		document.querySelector('.scrollTop').classList.remove('showScroll');
+		document.querySelector('.scrollTop').classList.add('hideScroll');
+	}
+}
