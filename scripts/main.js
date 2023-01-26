@@ -55,11 +55,12 @@ changeLanguage();
 const scrollToUp = document.querySelector('.scrollTop');
 
 window.onscroll = () => {
-	if (window.scrollY > 800) {
+	if (window.scrollY > 600) {
 		scrollToUp.classList.remove('hideScroll');
 		scrollToUp.classList.add('showScroll');
 	}
-	else if (window.scrollY < 800) {
+
+	else if (window.scrollY < 600) {
 		scrollToUp.classList.remove('showScroll');
 		scrollToUp.classList.add('hideScroll');
 	}
@@ -69,3 +70,16 @@ window.onscroll = () => {
 	}
 
 }
+
+/* const anchors = document.querySelectorAll('a[href*="#"]');
+
+for (let anchor of anchors) {
+	anchors.addEventListener("click", function (event) {
+		event.preventDefault();
+		const blockID = anchor.getAttribute('href');
+		document.querySelector('' + blockID).scrollIntoView({
+			behavior: "smooth",
+			block: "start"
+		})
+	})
+} */

@@ -65,6 +65,10 @@ html{
 		flex-direction: column;
 	}
 
+	.programs-skills-item{
+		margin-bottom: 80px;
+	}
+
 }
 
 .nav-menu-list{
@@ -193,7 +197,6 @@ hr{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 90px;
 }
 
 .about-me-inner{
@@ -238,6 +241,7 @@ hr{
 }
 
 .skills-title{
+	margin-top: 90px;
 	font-family: 'Gilroy', sans-serif;
 	font-weight: bold;
 	font-size: 34px;
