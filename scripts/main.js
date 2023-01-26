@@ -52,13 +52,20 @@ function changeLanguage () {
 }
 changeLanguage();
 
+const scrollToUp = document.querySelector('.scrollTop');
+
 window.onscroll = () => {
-	if (window.scrollY > 1000) {
-		document.querySelector('.scrollTop').classList.remove('hideScroll');
-		document.querySelector('.scrollTop').classList.add('showScroll');
+	if (window.scrollY > 800) {
+		scrollToUp.classList.remove('hideScroll');
+		scrollToUp.classList.add('showScroll');
 	}
-	else if (window.scrollY < 1000) {
-		document.querySelector('.scrollTop').classList.remove('showScroll');
-		document.querySelector('.scrollTop').classList.add('hideScroll');
+	else if (window.scrollY < 800) {
+		scrollToUp.classList.remove('showScroll');
+		scrollToUp.classList.add('hideScroll');
 	}
+
+	scrollToUp.onclick = () => {
+		window.scrollTo(0, 0)
+	}
+
 }

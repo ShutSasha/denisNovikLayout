@@ -3,6 +3,10 @@ html, body,h2 {
 	padding: 0;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 @font-face {
 	font-family: 'Gilroy';
 	src: url(../fonts/Gilroy-Medium.ttf) format('ttf');
@@ -25,16 +29,42 @@ html, body,h2 {
 
 .showScroll{
 	opacity: 1;
+	transition: opacity 1s ease;
 }
 
 .hideScroll{
 	opacity: 0;
+	transition: opacity 1s ease;
 }
 
-
-
 .container{
-	margin: 0 250px;
+	max-width: 	950px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+@media (max-width: 1200px){
+	.container{
+		max-width: 930px;
+	}
+}
+
+@media (max-width: 992px){
+	.container{
+		max-width: 750px;
+	}
+}
+
+@media (max-width: 767px){
+	.container{
+		max-width: none;
+	}
+
+	.programs-skills-list{
+		display: flex;
+		flex-direction: column;
+	}
+
 }
 
 .nav-menu-list{
@@ -325,7 +355,9 @@ hr{
 }
 
 .container-contacts{
-	margin: 0 550px;
+	max-width: 350px;
+	padding: 0 15px;
+	margin: 0 auto;
 }
 
 .contacts-inner{
