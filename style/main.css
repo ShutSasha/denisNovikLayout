@@ -60,6 +60,92 @@ html{
 		max-width: none;
 	}
 
+	.header-burger{
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 30px;
+		height: 20px;
+		cursor: pointer;
+		z-index: 3;
+	}
+	
+	.active-header-burger{
+		position: fixed;
+	}
+
+	.header-burger span{
+		position: absolute;
+		background-color: #070707;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+		z-index: 3;
+	}
+
+	.header-burger::before,.header-burger::after{
+		display: block;
+		content: '';
+		background-color: #070707;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		z-index: 3;
+	}
+	.header-burger::before{
+		top: 0;
+	}
+	.header-burger::after{
+		bottom: 0;
+	}
+
+	.nav-menu-list{
+		display: none !important;
+	}
+
+	.active-burger{
+		display: block !important;
+		display: flex !important;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around !important;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: #FFFFFF !important;
+		margin: 0 !important;
+	}
+
+	.click-burger-links{
+		display: none !important;
+	}
+
+	.buttons-in-burger{
+		position: fixed;
+		bottom: 50px;
+		right: 30px;
+	}
+	
+	.buttons-langs{
+		display: none !important;
+	}
+
+	.buttons-in-burger button{
+		font-size: 30px !important;
+	}
+
+	.buttons-in-burger p{
+		font-size: 30px !important;
+	}
+
+	.header-underline{
+		display: none;
+	}
+
 	.programs-skills-list{
 		display: flex;
 		flex-direction: column;
@@ -354,6 +440,12 @@ hr{
 	text-align: center;
 	text-decoration-line: underline;
 	color: #070707;
+	transition: color .3s ease;
+}
+
+.portfolio-image-link:hover{
+	color: #828282;
+	transition: color .4s ease;
 }
 
 .container-contacts{
@@ -420,6 +512,16 @@ hr{
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 50px;
+}
+
+.social-media-img{
+	filter: none;
+	transition: filter 1s ease;
+}
+
+.social-media-img:hover{
+	filter: drop-shadow(0 0 3mm rgb(0, 210, 242));
+	transition: filter .4s ease;
 }
 
 .footer-text{

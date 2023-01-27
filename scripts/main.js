@@ -71,15 +71,59 @@ window.onscroll = () => {
 
 }
 
-/* const anchors = document.querySelectorAll('a[href*="#"]');
+// scroll to anchors
+const anchors = document.querySelectorAll('a[href*="#"]');
 
 for (let anchor of anchors) {
-	anchors.addEventListener("click", function (event) {
+	anchors.onclick = (event) => {
 		event.preventDefault();
 		const blockID = anchor.getAttribute('href');
 		document.querySelector('' + blockID).scrollIntoView({
 			behavior: "smooth",
 			block: "start"
 		})
-	})
-} */
+	}
+}
+
+
+let activeBurgerBoolean = false;
+const headerBurger = document.querySelector('.header-burger').onclick = () => {
+	const menuList = document.querySelector('.nav-menu-list');
+	const langButtons = document.querySelector('.buttons-langs');
+	if (document.querySelector('.active-burger')) {
+		activeBurgerBoolean = false;
+		menuList.classList.remove('active-burger');
+		langButtons.classList.remove('buttons-in-burger');
+		document.querySelector('.header-burger').classList.remove('active-header-burger')
+		scrollToUp.style.display = 'block';
+		document.querySelector('.buttons-langs').style.cssText = 'display: none !important';
+		document.querySelector('body').style.overflow = 'visible';
+	}
+	else {
+		activeBurgerBoolean = true;
+		menuList.classList.add('active-burger');
+		document.querySelector('.header-burger').classList.add('active-header-burger')
+		langButtons.classList.add('buttons-in-burger');
+		document.querySelector('.buttons-langs').style.cssText = 'display: flex !important';
+		scrollToUp.style.display = 'none';
+		document.querySelector('body').style.overflow = 'hidden';
+		if (activeBurgerBoolean) {
+			document.querySelector('.nav-menu-list').onclick = (event) => {
+				let target = event.target;
+
+				if (target.tagName != 'A')
+					return
+
+				else {
+					activeBurgerBoolean = false;
+					menuList.classList.remove('active-burger');
+					langButtons.classList.remove('buttons-in-burger');
+					document.querySelector('.header-burger').classList.remove('active-header-burger')
+					scrollToUp.style.display = 'block';
+					document.querySelector('.buttons-langs').style.cssText = 'display: none !important';
+					document.querySelector('body').style.overflow = 'visible';
+				}
+			}
+		}
+	}
+}
